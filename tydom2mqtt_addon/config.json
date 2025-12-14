@@ -23,6 +23,8 @@
     "MQTT_PORT": 1883,
     "MQTT_SSL": false,
     "log_level": "info"
+	"DELTADORE_LOGIN": "",
+    "DELTADORE_PASSWORD": ""
   },
   "schema":
   {
@@ -38,5 +40,7 @@
     "MQTT_PASSWORD": "str?",
     "MQTT_PORT": "port?",
     "MQTT_SSL": "bool?"
+	"DELTADORE_LOGIN": "str?",
+    "DELTADORE_PASSWORD": "str?"
   }
 }
