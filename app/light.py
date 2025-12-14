@@ -87,8 +87,14 @@ class Light:
             print("light sensors Error :")
             print(e)
 
+        # Correctif Tyxia 6610 : si current_level est None, on tente de récupérer onFavPos
+        if self.current_level is None and "onFavPos" in self.attributes:
+           self.current_level = 100 if self.attributes["onFavPos"] == "ON" else 0
+        elif self.current_level is None:
+           self.current_level = 0
+
         self.level_topic = light_level_topic.format(
-            id=self.id, current_level=self.current_level)
+           id=self.id, current_level=self.current_level)
 
         if (self.mqtt is not None):
             self.mqtt.mqtt_client.publish(
