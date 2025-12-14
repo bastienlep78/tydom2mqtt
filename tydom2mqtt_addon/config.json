@@ -1,6 +1,6 @@
 {
   "name": "tydom2mqttBastienlep78",
-  "image": "fmartinou/tydom2mqtt",
+  "image": "bastienlep78/tydom2mqtt",
   "version": "latest",
   "slug": "tydom2mqttBastienlep78",
   "description": "Link between a Delta Dore's Tydom 1.0 Hub and and a MQTT broker, unofficial of course, hassio addon version",
